@@ -1,0 +1,20 @@
+server:
+  port: "50055"
+  host: "0.0.0.0"
+
+database:
+  host: "localhost"
+  port: 5432
+  user: "postgres"
+  password: "postgres"
+  dbname: "metachat"
+  sslmode: "disable"
+
+logging:
+  level: "info"
+  format: "json"
+
+grpc:
+  reflection_enabled: true
+  shutdown_timeout: "10s"
+
