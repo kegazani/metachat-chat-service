@@ -7,8 +7,6 @@ import (
 	"time"
 
 	"metachat/chat-service/internal/models"
-
-	"github.com/lib/pq"
 )
 
 type ChatRepository interface {

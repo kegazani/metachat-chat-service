@@ -2,7 +2,6 @@ package grpc
 
 import (
 	"context"
-	"fmt"
 
 	"metachat/chat-service/internal/models"
 	"metachat/chat-service/internal/service"
@@ -176,4 +175,3 @@ func (s *ChatServer) messageToProto(msg *models.Message) *pb.Message {
 
 	return protoMsg
 }
-
