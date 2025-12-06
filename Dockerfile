@@ -2,11 +2,12 @@ FROM golang:1.24 AS builder
 
 WORKDIR /app
 
-COPY go.mod go.sum ./
+COPY metachat-chat-service/go.mod ./
+COPY metachat-chat-service/go.sum* ./
 
 RUN go mod download
 
-COPY . .
+COPY metachat-chat-service/ .
 
 RUN go mod tidy
 
